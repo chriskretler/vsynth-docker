@@ -1,5 +1,6 @@
 FROM ubuntu:16.04
 
+# The following packages also include opencl libraries for compiling knlmeanscl.
 RUN apt-get update \
 	&& apt-get install -y build-essential git yasm libass-dev python3-pip python3-dev \
 	cython3 autoconf libtool libmagick++-dev qt5-default libfftw3-dev wget ocl-icd-*
